@@ -7,9 +7,16 @@ import org.xml.sax.helpers.DefaultHandler;
 public class LibrosSAXhandler extends DefaultHandler  {
     
     int contador = 0;
+    private String etiqueta;
+    
 
     public LibrosSAXhandler() {
+            etiqueta="";//también se puede hacer con int etiqueta 
+
+        
     }
+    
+    
     
     @Override
     public void startDocument() {
