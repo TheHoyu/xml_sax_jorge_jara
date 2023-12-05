@@ -30,7 +30,7 @@ public class TitulosSAXhandler extends DefaultHandler {
             etiqueta = "Autor";
         }
     }
-
+    // metodo que quita los ca´racteresvacios queno nos interesan, como los tabuladores, espaciosvacios 
     @Override
     public void characters(char[] ch, int start, int length) throws SAXException {
         if (etiqueta.equals("Titulo") || etiqueta.equals("Autor")) {
