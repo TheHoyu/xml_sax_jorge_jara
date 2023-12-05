@@ -3,7 +3,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-
+// metodo que genera los titulos del proyecto
 
 public class TitulosSAXhandler extends DefaultHandler {
 
@@ -18,7 +18,8 @@ public class TitulosSAXhandler extends DefaultHandler {
         System.out.println("LISTADO DE TITULOS");
         System.out.println("==================");
     }
-
+    // metodo que va recorriendo los nodos,
+    // si son nodos, libro, los escribe titulo, si son titulo los escrbie como autor
     @Override
     public void startElement(String uri, String localName, String qName, Attributes atts) throws SAXException {
         if (qName.equals("Libro")) {
